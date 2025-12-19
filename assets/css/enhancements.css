@@ -47,3 +47,64 @@ form input:focus, form textarea:focus {
     transform: scale(1.1);
     transition: transform 0.2s ease;
 }
+
+/* Mobile navigation improvements */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0.5em;
+    color: inherit;
+}
+
+@media screen and (max-width: 736px) {
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        z-index: 1000;
+    }
+    
+    #nav {
+        display: none;
+    }
+    
+    #nav.mobile-nav-open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+    }
+    
+    #nav.mobile-nav-open ul {
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    #nav.mobile-nav-open li {
+        margin: 0.5em 0;
+    }
+}
+
+/* Form validation styles */
+input.error, textarea.error {
+    border-color: #e74c3c !important;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2) !important;
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Loading state */
+body.is-loading * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+}
