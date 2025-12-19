@@ -1,0 +1,49 @@
+/* Visual enhancements for Margaret's website */
+
+/* Improve button spacing and hover effects */
+.button {
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Better form styling */
+form input, form textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.2);
+}
+
+/* Improve social links spacing */
+.row ul li {
+    margin-right: 1em;
+}
+
+/* Better responsive spacing */
+@media screen and (max-width: 768px) {
+    #about p {
+        margin-bottom: 1.5em;
+    }
+    
+    .actions {
+        text-align: center;
+    }
+}
+
+/* Improve readability */
+#about p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
+/* Add subtle animation to social icons */
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
