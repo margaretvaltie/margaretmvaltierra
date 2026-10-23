@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/enhancements.css" />
 		<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -41,7 +42,7 @@
       	<h2>About Me</h2>
 <p>I enjoy blending technical curiosity with the power of community. I bridge the gap between innovation and hard work. 
 
-<p>I'm an AWS Community Hero. Since 2013, I've organized the <a href="Chicagoaws.com" target="_blank">Chicago AWS user group</a>, the 3rd largest user group in North America. We maintain <a href="https://www.meetup.com/aws-chicago/" target="_blank"> regular educational, user-focused events</a> in downtown Chicago. In 2017 I joined the wonderful DevOpsDays Chicago organizers as part of the worldwide community conference series for DevOps. <a href="https://www.devopsdays.org/chicago/" target="_blank" class="special">Join DevOpsDays in the future!</a>
+<p>I'm an AWS Community Hero. Since 2013, I've organized the <a href="https://awschicago.com" target="_blank">Chicago AWS user group</a>, the 3rd largest user group in North America. We maintain <a href="https://www.meetup.com/aws-chicago/" target="_blank"> regular educational, user-focused events</a> in downtown Chicago. In 2017 I joined the wonderful DevOpsDays Chicago organizers as part of the worldwide community conference series for DevOps. <a href="https://www.devopsdays.org/chicago/" target="_blank" class="special">Join DevOpsDays in the future!</a>
 <p> I bring hands-on expertise in AWS, cloud migrations, and technical communications. I’ve led Agile and DevOps transformations for large and small teams. I am proud to organize the Chicago AWS user group and AWS Community Day Midwest, a user-run conference for over 400 attendees. I can easily translate ambiguous requirements into actionable milestones, align stakeholders across disciplines, and deliver measurable impact. I’ve also presented at AWS re:Invent, the Chicago AWS Summit, and community events. I can communicate complex technical concepts with clarity and enthusiasm.
 <p>Before technology, I ran green building LEED certification projects for over 8M square feet of REIT buildings, earning my Certified LEED AP O+M. I hold a BSM from Tulane University. Roll Wave!
 <p>I am a product of Nashville, a lover of New Orleans, and a proud Chicago transplant. I adore my dog, Peanut. </p>
@@ -66,15 +67,15 @@
 			<form method="post" action="https://formspree.io/yaamargie@gmail.com">
 					<div class="row 50%">
 						<div class="6u 12u(mobile)">
-					<input name="name" placeholder="Name" type="text" />
+					<label for="contact-name" class="sr-only">Name</label><input id="contact-name" name="name" placeholder="Name" type="text" required />
 						</div>
 						<div class="6u 12u(mobile)">
-					<input name="email" placeholder="Email" type="text" />
+					<label for="contact-email" class="sr-only">Email</label><input id="contact-email" name="email" placeholder="Email" type="email" required />
 						</div>
 					</div>
 					<div class="row 50%">
 						<div class="12u">
-					<textarea name="message" placeholder="Message"></textarea>
+					<label for="contact-message" class="sr-only">Message</label><textarea id="contact-message" name="message" placeholder="Message" required></textarea>
 						</div>
 					</div>
 					<div class="row 50%">
