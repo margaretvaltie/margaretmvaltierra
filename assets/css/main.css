@@ -1337,7 +1337,7 @@
 	}
 
 	form input[type="text"],
-	form input[type="email"]
+	form input[type="email"],
 	input[type="password"],
 	form select,
 	form textarea {
@@ -1357,7 +1357,7 @@
 	}
 
 		form input[type="text"]:focus,
-		form input[type="email"]
+		form input[type="email"]:focus,
 		input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
@@ -1567,7 +1567,7 @@
 	}
 
 		#banner-wrapper .inner {
-			background: url("../../images/chicago-skyline.jpg");
+			background: url("../img/chicago_skyline.jpeg");
 			background-size: cover;
 		}
 

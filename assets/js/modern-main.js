@@ -106,13 +106,12 @@
         });
 
         // Add loading state to form submissions
-        const submitButtons = document.querySelectorAll('input[type="submit"]');
-        submitButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                const form = this.closest('form');
-                if (form && form.checkValidity()) {
-                    this.value = 'Sending...';
-                    this.disabled = true;
+        forms.forEach(function(form) {
+            form.addEventListener('submit', function() {
+                const button = form.querySelector('input[type="submit"]');
+                if (button) {
+                    button.value = 'Sending...';
+                    button.disabled = true;
                 }
             });
         });
